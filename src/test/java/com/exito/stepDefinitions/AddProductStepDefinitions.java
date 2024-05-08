@@ -4,7 +4,11 @@ package com.exito.stepDefinitions;
  * Copyright 2023 SQA. Todos los derechos reservados.
  */
 
+import com.exito.steps.HomeSteps;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
+import io.github.bonigarcia.wdm.WebDriverManager;
+import net.thucydides.core.annotations.Steps;
 
 
 /**
@@ -12,9 +16,13 @@ import io.cucumber.java.en.*;
  * @Fecha: --o--
  */
 public class AddProductStepDefinitions {
+    @Steps
+    private HomeSteps homeSteps;
+
 
     @Given("que el usuario ingresa a la pagina web")
     public void queElUsuarioIngresaALaPaginaWeb() {
+        homeSteps.openUrl();
 
     }
     @When("el usuario ingresa al menu")

@@ -10,6 +10,7 @@ import net.serenitybdd.core.pages.PageObject;
  * @autor Rafael Chica
  * @Fecha: --o--
  */
+
 public class HomePageObject extends PageObject {
 
 }
