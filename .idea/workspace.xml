@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="799d82f4-bda6-4112-8bbe-434f1ca74897" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/HomeSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/ProductListPageObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/ProductListSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/HomePageObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/HomePageObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/steps/HomeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/HomeSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/exito/stepDefinitions/AddProductStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exito/stepDefinitions/AddProductStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
@@ -42,7 +44,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/2024/pc anterior/2024/Semillero BBOG -abril/POM/BBOG-POM-exito"
+    "last_opened_file_path": "C:/2024/pc anterior/2024/Semillero BBOG -abril/POM/BBOG-POM-exito",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -94,5 +99,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/exito/steps/ProductListSteps.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

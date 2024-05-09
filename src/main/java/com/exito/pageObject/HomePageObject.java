@@ -5,6 +5,7 @@ package com.exito.pageObject;
  */
 
 import net.serenitybdd.core.pages.PageObject;
+import org.openqa.selenium.By;
 
 /**
  * @autor Rafael Chica
@@ -13,4 +14,11 @@ import net.serenitybdd.core.pages.PageObject;
 
 public class HomePageObject extends PageObject {
 
+
+
+    private final By txtSearch= By.xpath("//input[@aria-label='search' and @placeholder='Buscar en exito.com']");
+
+    public By getTxtSearch() {
+        return txtSearch;
+    }
 }

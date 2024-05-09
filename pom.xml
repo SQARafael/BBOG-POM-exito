@@ -15,7 +15,30 @@
 
         <serenity-version>3.9.8</serenity-version>
         <tags></tags>
+        <maven.build.timestamp.format>dd-MM-yyyy</maven.build.timestamp.format>
+        <wdm.mainClass>io.github.bonigarcia.wdm.WebDriverManager</wdm.mainClass>
+        <wdm.agentClass>io.github.bonigarcia.wdm.WdmAgent</wdm.agentClass>
     </properties>
+    <name>WebDriverManager</name>
+    <description>
+        Automated driver management and other helper features for Selenium WebDriver in Java
+    </description>
+    <url>https://bonigarcia.dev/webdrivermanager/</url>
+
+    <developers>
+        <developer>
+            <id>bonigarcia</id>
+            <name>Boni Garcia</name>
+            <url>https://bonigarcia.dev/</url>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/bonigarcia/webdrivermanager.git</connection>
+        <developerConnection>scm:git:git@github.com:bonigarcia/webdrivermanager.git</developerConnection>
+        <url>https://github.com/bonigarcia/webdrivermanager</url>
+        <tag>webdrivermanager-5.2.1</tag>
+    </scm>
 
     <dependencies>
         <dependency>

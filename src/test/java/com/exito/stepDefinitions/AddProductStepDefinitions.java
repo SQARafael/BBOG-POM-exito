@@ -5,6 +5,7 @@ package com.exito.stepDefinitions;
  */
 
 import com.exito.steps.HomeSteps;
+import com.exito.steps.ProductListSteps;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -19,6 +20,9 @@ public class AddProductStepDefinitions {
     @Steps
     private HomeSteps homeSteps;
 
+    @Steps
+    private ProductListSteps productList;
+
 
     @Given("que el usuario ingresa a la pagina web")
     public void queElUsuarioIngresaALaPaginaWeb() {
@@ -27,10 +31,12 @@ public class AddProductStepDefinitions {
     }
     @When("el usuario ingresa al menu")
     public void elUsuarioIngresaAlMenu() {
+        homeSteps.sendInfo();
 
     }
     @When("Busca la categoria y subcategoria")
     public void buscaLaCategoriaYSubcategoria() {
+        productList.selectProduct();
 
     }
     @When("Selecciona el producto")
