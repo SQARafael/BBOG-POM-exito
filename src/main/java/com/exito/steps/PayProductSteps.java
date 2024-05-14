@@ -15,7 +15,6 @@ public class PayProductSteps {
     @Step("Assertions")
     public void validarProducto(){
 
-        System.out.println(NameProducModel.getNameProduct() +"Producto leido");
 
 
         //assertTrue(
