@@ -8,18 +8,23 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+import static com.exito.utils.EsperasExplicitas.esperarElemento;
+
 public class ProductListSteps {
     @Page
     private ProductListPageObject listProduct;
 
     @Step("Seleccion de producto")
     public void selectProduct(){
-        NameProducModel nameProducModel=new NameProducModel();
+
 
         List<WebElement> product = listProduct.getDriver().findElements(listProduct.getLnkProductsName());
 
-        String nameProduct = product.get(0).getText();
-        nameProducModel.setNameProduct(nameProduct);
+        String nameProduct =String.valueOf(product.get(0).getText());
+        NameProducModel.setNameProduct(nameProduct);
+        System.out.println(NameProducModel.getNameProduct() + "Producto seleccionado");
+        esperarElemento(listProduct.getDriver(), listProduct.getLnkProductsName());
+
         product.get(0).click();
     }
 }

@@ -1,13 +1,13 @@
 package com.exito.models;
 
 public class NameProducModel {
-    private  String nameProduct;
+      private static String nameProduct;
 
-    public String getNameProduct() {
+    public static String getNameProduct() {
         return nameProduct;
     }
 
-    public void setNameProduct(String nameProduct) {
-        this.nameProduct = nameProduct;
+    public static void setNameProduct(String nameProduct) {
+        NameProducModel.nameProduct = nameProduct;
     }
 }

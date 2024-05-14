@@ -5,6 +5,8 @@ package com.exito.stepDefinitions;
  */
 
 import com.exito.steps.HomeSteps;
+import com.exito.steps.PayProductSteps;
+import com.exito.steps.ProductDetailsSteps;
 import com.exito.steps.ProductListSteps;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -22,6 +24,12 @@ public class AddProductStepDefinitions {
 
     @Steps
     private ProductListSteps productList;
+
+    @Steps
+    private ProductDetailsSteps productDetails;
+
+    @Steps
+    private PayProductSteps payProduct;
 
 
     @Given("que el usuario ingresa a la pagina web")
@@ -45,10 +53,12 @@ public class AddProductStepDefinitions {
     }
     @When("Dar click en el boton de agregar al carrito")
     public void darClickEnElBotonDeAgregarAlCarrito() {
+        productDetails.clickAddToCar();
+        productDetails.clickToCar();
 
     }
     @Then("Se podra visualizar el producto en el carrito de compras")
     public void sePodraVisualizarElProductoEnElCarritoDeCompras() {
-
+        payProduct.validarProducto();
     }
 }
