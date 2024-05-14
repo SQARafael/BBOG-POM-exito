@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="799d82f4-bda6-4112-8bbe-434f1ca74897" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/PayProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/pageObject/ProductDetailsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/PayProductSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/ProductDetailsSteps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/exito/utils/EsperasExplicitas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/junit-plataform.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/logback-test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/wdm-test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/models/NameProducModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/models/NameProducModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/exito/steps/ProductListSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/exito/steps/ProductListSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/exito/stepDefinitions/AddProductStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/exito/stepDefinitions/AddProductStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/serenity.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/serenity.conf" afterDir="false" />
     </list>
@@ -40,18 +37,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/RafaelAntonioChicaPr/codFacilito/codigo_facilito_downloader&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/RafaelAntonioChicaPr/codFacilito/codigo_facilito_downloader",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\2024\Semillero BBOG -abril\plantilla\BOOG-Exito\src\test\resources\webdriver\windows" />
@@ -101,16 +98,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/exito/steps/PayProductSteps.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

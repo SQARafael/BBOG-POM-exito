@@ -11,7 +11,14 @@ import com.exito.steps.ProductListSteps;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.Steps;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 
 
 /**
@@ -19,6 +26,21 @@ import net.thucydides.core.annotations.Steps;
  * @Fecha: --o--
  */
 public class AddProductStepDefinitions {
+    WebDriver driver;
+
+    @BeforeAll
+    static void setupClass() {
+        WebDriverManager.chromedriver().clearDriverCache().setup();
+    }
+
+    @BeforeEach
+    void setupTest() {
+        driver = new ChromeDriver();
+    }
+    @AfterEach
+    void teardown() {
+        driver.quit();
+    }
     @Steps
     private HomeSteps homeSteps;
 
