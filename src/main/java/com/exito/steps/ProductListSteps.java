@@ -7,8 +7,10 @@ import org.fluentlenium.core.annotation.Page;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.Random;
 
 import static com.exito.utils.EsperasExplicitas.esperarElemento;
+import static com.exito.utils.SeleccionAleatoria.seleccionRandom;
 
 public class ProductListSteps {
     @Page
@@ -20,11 +22,12 @@ public class ProductListSteps {
 
         List<WebElement> product = listProduct.getDriver().findElements(listProduct.getLnkProductsName());
 
-        String nameProduct =String.valueOf(product.get(0).getText());
+        WebElement elementoWeb = seleccionRandom(product);
+        String nameProduct =String.valueOf(elementoWeb.getText());
         NameProducModel.setNameProduct(nameProduct);
-        System.out.println(NameProducModel.getNameProduct() + "Producto seleccionado");
+
         esperarElemento(listProduct.getDriver(), listProduct.getLnkProductsName());
 
-        product.get(0).click();
+        elementoWeb.click();
     }
 }

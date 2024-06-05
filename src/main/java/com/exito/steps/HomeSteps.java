@@ -5,6 +5,8 @@ import net.thucydides.core.annotations.Step;
 import org.fluentlenium.core.annotation.Page;
 import org.openqa.selenium.Keys;
 
+import static com.exito.utils.CallData.extractTo;
+
 public class HomeSteps {
 
     @Page
@@ -19,6 +21,7 @@ public class HomeSteps {
 
     @Step("Enviar info de busqueda")
     public void sendInfo(){
-        homePage.getDriver().findElement(homePage.getTxtSearch()).sendKeys("Portatil", Keys.ENTER);
+
+        homePage.getDriver().findElement(homePage.getTxtSearch()).sendKeys(extractTo().get(0).get("Producto"), Keys.ENTER);
     }
 }

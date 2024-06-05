@@ -13,6 +13,7 @@ public class EsperasExplicitas {
         waitVar.until(ExpectedConditions.elementToBeClickable(elementBy));
     }
     public static void esperarElemento(WebDriver driver, By elementBy){
+
         WebDriverWait waitVar= new WebDriverWait(driver, Duration.ofSeconds(60));
         waitVar.until(ExpectedConditions.visibilityOfElementLocated(elementBy));
     }
